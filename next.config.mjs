@@ -1,8 +1,4 @@
-/**
- * @type {import('next').NextConfig}
- */
-const nextConfig = {
-  distDir: '.next-build',
-};
+/** @type {import('next').NextConfig} */
+const nextConfig = {};
 
 export default nextConfig;
