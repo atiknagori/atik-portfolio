@@ -37,8 +37,8 @@ export function Hero() {
   const nameScale = useTransform(smoothProgress, [0, 0.25], [1, 0.8]);
 
   return (
-    <div ref={containerRef} className="relative h-[600vh]">
-      <section id="home" className="sticky top-0 h-screen w-full flex flex-col items-center justify-center overflow-hidden bg-[#f0f0f0]">
+    <div ref={containerRef} id="home" className="relative h-[600vh]">
+      <section className="sticky top-0 h-screen w-full flex flex-col items-center justify-center overflow-hidden bg-[#f0f0f0]">
         
         {/* Hero Title */}
         <motion.div 

@@ -3,12 +3,13 @@ import { motion } from 'motion/react';
 import { ArrowUpRight, Github, Linkedin, Mail, Phone } from 'lucide-react';
 
 export function Footer() {
-  const [time, setTime] = useState(new Date());
+  const [time, setTime] = useState<Date | null>(null);
 
   useEffect(() => {
+    setTime(new Date());
     const timer = setInterval(() => {
       setTime(new Date());
-    }, 60000); // Update every minute
+    }, 1000); // Update every second
     return () => clearInterval(timer);
   }, []);
 
@@ -90,7 +91,7 @@ export function Footer() {
           <div className="flex flex-col gap-6 text-right md:text-left">
             <span className="text-[10px] font-black uppercase tracking-widest text-white/30 truncate">Current Time</span>
             <p className="text-2xl font-display font-black">
-              {time.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: false })} IST
+              {time ? time.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: false }) : '--:--'} IST
             </p>
           </div>
         </div>

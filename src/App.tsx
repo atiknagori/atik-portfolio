@@ -1,3 +1,5 @@
+'use client';
+
 import { lazy, Suspense, useCallback, useEffect, useState } from 'react';
 import { SmoothScroll } from './components/SmoothScroll';
 import { CustomCursor } from './components/CustomCursor';

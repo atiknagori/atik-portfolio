@@ -39,7 +39,7 @@ export function Philosophy() {
               <div className="overflow-hidden">
                 <motion.h2 
                   style={{ x: s1XLeft }}
-                  className="text-[16vw] md:text-[10vw] font-display font-black leading-none tracking-tight uppercase whitespace-nowrap will-change-transform"
+                  className="text-[16vw] md:text-[clamp(4rem,8vw,9rem)] font-display font-black leading-none tracking-tight uppercase whitespace-nowrap will-change-transform"
                 >
                   CRAFTING
                 </motion.h2>
@@ -53,7 +53,7 @@ export function Philosophy() {
               <div className="overflow-hidden">
                 <motion.h2 
                   style={{ x: s1XRight }}
-                  className="text-[16vw] md:text-[10vw] font-display font-black leading-none tracking-tight uppercase whitespace-nowrap text-red-500 will-change-transform"
+                  className="text-[16vw] md:text-[clamp(4rem,8vw,9rem)] font-display font-black leading-none tracking-tight uppercase whitespace-nowrap text-red-500 will-change-transform"
                 >
                   FUTURE
                 </motion.h2>

@@ -34,12 +34,12 @@ export function Expertise() {
       <div className="max-w-[1600px] mx-auto px-6 md:px-12 w-full flex flex-col md:flex-row min-h-screen">
         
         {/* Left Column: Sticky Title */}
-        <div className="w-full md:w-[40%] md:h-screen md:sticky md:top-0 h-fit pt-20 pb-0 md:py-0 flex flex-col justify-center gap-4 md:gap-10">
+        <div className="w-full md:w-[40%] md:h-screen md:sticky md:top-0 h-fit pt-20 pb-0 md:py-0 flex flex-col justify-center gap-4 md:gap-10 md:pr-8">
           <div>
             <div className="inline-block px-4 py-1.5 border border-white/10 rounded-full text-[10px] font-black tracking-[0.4em] uppercase mb-4 md:mb-8 text-red-500 bg-white/5">
               Expertise
             </div>
-            <h3 className="text-[10vw] md:text-[5vw] font-display font-black leading-[0.85] tracking-tighter uppercase mb-6 md:mb-12">
+            <h3 className="text-[10vw] md:text-[clamp(2.5rem,4vw,4.5rem)] font-display font-black leading-[0.85] tracking-tighter uppercase mb-6 md:mb-12 break-words">
               REDEFINING <br className="hidden md:block" /> THE MODERN <br /> <span className="text-red-500">EXPERIENCE</span>
             </h3>
             
@@ -71,7 +71,7 @@ export function Expertise() {
                     {item.title}
                   </h4>
                   
-                  <p className="text-[14px] md:text-[18px] font-medium leading-relaxed opacity-40 group-hover:opacity-80 transition-opacity">
+                  <p className="text-[14px] md:text-[18px] font-medium leading-relaxed opacity-40 group-hover:opacity-80 transition-opacity pr-8 md:pr-16">
                     {item.desc}
                   </p>
                </div>
