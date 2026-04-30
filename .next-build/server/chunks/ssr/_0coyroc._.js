@@ -1,0 +1,3 @@
+module.exports=[16379,(a,b,c)=>{b.exports={name:"Atik Nagori | Web Developer Portfolio",description:"High-performance portfolio of Atik Nagori, a Web Developer specializing in clean, responsive, and animated web experiences.",requestFramePermissions:[],majorCapabilities:[]}},27572,a=>{"use strict";var b=a.i(7997),c=a.i(16379);let d={title:c.default.name,description:c.default.description};a.s(["default",0,function({children:a}){return(0,b.jsx)("html",{lang:"en",children:(0,b.jsx)("body",{children:a})})},"metadata",0,d])},50645,a=>{a.n(a.i(27572))}];
+
+//# sourceMappingURL=_0coyroc._.js.map

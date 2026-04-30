@@ -18,6 +18,7 @@ function FloatingCard({
   progress: ReturnType<typeof useSpring>;
   start: number;
   end: number;
+  key?: number;
 }) {
   const opacity = useTransform(progress, [start, start + 0.05, end - 0.05, end], [0, 1, 1, 0]);
   const y = useTransform(progress, [start, end], [100, -100]);

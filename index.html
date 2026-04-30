@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atik Nagori: Expert Frontend Web Developer</title>
+    <meta name="title" content="Expert Frontend&#10;Web Developer" />
+    <meta
+      name="description"
+      content="I specialize in building high-converting WooCommerce stores, bespoke custom WordPress themes, and lightning-fast websites that rank high on Google and drive real business results."
+    />
+    <meta name="author" content="Atik Nagori" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="canonical" href="" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Expert Frontend Web Developer" />
+    <meta
+      property="og:description"
+      content="I specialize in building high-converting WooCommerce stores, bespoke custom WordPress themes, and lightning-fast websites that rank high on Google and drive real business results."
+    />
+    <meta property="og:url" content="/" />
+    <meta property="og:site_name" content="Atik Nagori Portfolio" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Expert Frontend Web Developer" />
+    <meta
+      name="twitter:description"
+      content="I specialize in building high-converting WooCommerce stores, bespoke custom WordPress themes, and lightning-fast websites that rank high on Google and drive real business results."
+    />
+    <script>
+      (function() {
+        var pageUrl = window.location.href.split('#')[0];
+        var canonical = document.querySelector('link[rel="canonical"]');
+        var ogUrl = document.querySelector('meta[property="og:url"]');
+
+        if (canonical) canonical.setAttribute('href', pageUrl);
+        if (ogUrl) ogUrl.setAttribute('content', pageUrl);
+      })();
+
+      // Fix for "Cannot set property fetch which has only a getter"
+      (function() {
+        try {
+          const originalFetch = window.fetch;
+          Object.defineProperty(window, 'fetch', {
+            get: function() { return originalFetch; },
+            set: function(v) { console.warn('Fetch override attempt blocked'); },
+            configurable: true,
+            enumerable: true
+          });
+        } catch (e) {
+          window.addEventListener('error', function(event) {
+            if (event.error && event.error.message && event.error.message.includes('fetch') && event.error.message.includes('getter')) {
+              event.preventDefault();
+            }
+            if (event.message && event.message.includes('fetch') && event.message.includes('getter')) {
+              event.preventDefault();
+            }
+          }, true);
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
